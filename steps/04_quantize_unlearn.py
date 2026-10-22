@@ -1,4 +1,4 @@
-"""Train (done) -> quantize -> unlearn the quantized model using only its integer weights -> check.
+"""Train (done) -> quantize -> unlearn the quantized model (no full-precision copy) -> check.
    For each architecture, seed, quantization technique and bit width: quantize the original and the retrained model identically, run every unlearning method once
    (one fixed setting, no tuning), judge the model after the last step against the equally quantized retrained model. Full precision is run the same way as a reference."""
 import sys, pathlib; sys.path.insert(0, str(pathlib.Path(__file__).resolve().parents[1]))
@@ -15,9 +15,9 @@ w = csv.DictWriter(out, fieldnames=["arch", "seed", "tech", "bits", "method", "h
 def load(name): m = make_model(a.arch); m.load_state_dict(torch.load(C.CKPT / a.arch / f"seed{a.seed}_{name}.pt")); return m.eval()
 orig, retrained = load("original"), load("retrained")
 conds = [("fp", 32, orig, retrained, False)] + [(t, b, quantize(orig, t, b), quantize(retrained, t, b), True) for t in C.QUANT for b in C.BITS]
-for tech, bits, m0, g, integer_only in conds:
+for tech, bits, m0, g, quantized in conds:
     ref = reference(m0, g, D)
     for method, hp in C.METHODS.items():
-        m, ch = unlearn(m0, method, hp, D, a.arch, integer_only, a.seed); e = evaluate(m, ref, D)
-        w.writerow(dict(arch=a.arch, seed=a.seed, tech=tech, bits=bits, method=method, hp=hp, changed=ch if integer_only else "", gap=ref["gap"], **e)); out.flush()
+        m, ch = unlearn(m0, method, hp, D, a.arch, quantized, a.seed); e = evaluate(m, ref, D)
+        w.writerow(dict(arch=a.arch, seed=a.seed, tech=tech, bits=bits, method=method, hp=hp, changed=ch if quantized else "", gap=ref["gap"], **e)); out.flush()
     print(f"[{time.time()-t0:.0f}s] {a.arch} seed {a.seed} {tech} {bits}-bit done", flush=True)

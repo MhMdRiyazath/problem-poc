@@ -16,7 +16,7 @@ SEEDS = {"dlinear": [0, 1, 2], "mlp": [0, 1], "patchtst": [0]}        # MLP and 
 # ---- quantization: post-training, weights of every Linear layer, signed integers ----
 BITS = [8, 6, 4, 3, 2]
 QUANT = {"channel": ("per-channel, abs-max", False, None),                    # standard
-         "tensor": ("per-tensor, abs-max", True, None),                       # integer-only hardware style (one scale per layer)
+         "tensor": ("per-tensor, abs-max", True, None),                       # one scale per layer, common on small hardware
          "clip": ("per-channel, 99th-percentile clipping", False, 0.99)}      # outlier-clipping calibration used for time-series PTQ
 
 # ---- unlearning: time-series methods only, ONE fixed setting each (no search, no tuning), judged after the last step ----

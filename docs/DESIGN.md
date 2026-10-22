@@ -1,13 +1,13 @@
 # Design (written before the quantize-and-unlearn runs)
 
 ## Question
-If a time-series forecasting model has already been quantized to integers, can the unlearning methods used in the time-series unlearning literature remove one client's data using only the integer weights?
+If a time-series forecasting model has already been quantized, can the unlearning methods used in the time-series unlearning literature make it forget one client's data, with no full-precision copy and no retraining from scratch?
 
 ## Pipeline
 1. Data: Electricity (hourly, 20 clients used). Clients 1 to 10 train the model, client 10 is the one to forget, clients 11 to 20 are never trained on (non-members for the attack). Look-back 168 h, forecast 24 h. Time split 70/10/20, per-client z-score from the training period.
 2. Train, in full precision: an **original** model (all 10 clients) and a **retrained** model (client 10 left out, the ideal forgotten model). Models: DLinear, MLP, PatchTST. Seeds: DLinear 3, MLP 2, PatchTST 1 (training cost).
 3. Quantize, post-training, to signed integers: weights of every Linear layer, round-to-nearest, bits 8, 6, 4, 3, 2. Three techniques: per-channel abs-max, per-tensor abs-max (one scale per layer, integer-only hardware style), per-channel with 99th-percentile clipping. Biases, LayerNorm and position tables stay in full precision. The original and the retrained model are quantized identically.
-4. Unlearn the quantized original **using only its integer weights**: only the integer Linear weights may change, after every step they are snapped back to the integer grid, scales stay fixed, biases and norms are frozen.
+4. Unlearn the quantized original. No full-precision copy is used: only the Linear weights (integers) may change, after every step they are snapped back to the integer grid, scales stay fixed, biases and norms are frozen.
 5. Check against the equally quantized retrained model.
 
 ## Methods (time-series unlearning literature only)

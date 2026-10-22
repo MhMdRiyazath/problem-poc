@@ -34,6 +34,6 @@ for arch in C.ARCHS:
         for i in range(len(meths)):
             for j in range(len(C.BITS)): ax.text(j, i, T[i][j], ha="center", va="center", color="white", fontsize=8, fontweight="bold")
         ax.set_xticks(range(len(C.BITS))); ax.set_xticklabels([f"INT{b}" for b in sorted(C.BITS, reverse=True)]); ax.set_yticks(range(len(meths))); ax.set_yticklabels(meths, fontsize=8); ax.set_title(C.QUANT[tech][0], fontsize=9)
-    fig.suptitle(f"{arch}: unlearning a quantized model with integer weights only. red = integer weights stuck (<1% changed), amber = weights moved (this does not mean the forgetting was correct). text = % of integer weights changed", fontsize=8)
+    fig.suptitle(f"{arch}: unlearning a quantized model (no full-precision copy). red = integer weights stuck (<1% changed), amber = weights moved (this does not mean the forgetting was correct). text = % of integer weights changed", fontsize=8)
     plt.tight_layout(); plt.savefig(C.FIG / f"{arch}.png", dpi=140); plt.close()
 open(C.RES / "RESULTS_TABLES.md", "w").write("\n".join(md)); print("\n".join(md[:60]))

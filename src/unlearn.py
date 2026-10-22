@@ -3,7 +3,7 @@ import config as C
 from .models import qlinears, make_model
 from .quantize import project
 
-def unlearn(m0, method, hp, D, arch, integer_only, seed):
+def unlearn(m0, method, hp, D, arch, quantized, seed):
     """Time-series unlearning methods, client 10 = forget set, the other 9 clients = retain set. hp = learning rate (noise level for GaussAmnesiac). Adam, 400 steps, batch 64.
       RandLabel      forget windows trained toward random targets, plus the retain loss                      (TS-Unlearn family of label-based baselines)
       ZeroLabel      forget windows trained toward zeros, plus the retain loss                               (same family)
@@ -12,10 +12,10 @@ def unlearn(m0, method, hp, D, arch, integer_only, seed):
       TSU            TS-Unlearn dual objective: 0.5 x retain loss + 0.5 x loss toward noisy forget targets   (fixed Pareto weight 0.5)
       GaussAmnesiac  Gaussian noise added to the weights (relative std = hp), then 200 retain-only repair steps
       Blindspot      distillation: stay close to the original model on retain windows, copy an untrained network on forget windows
-    integer_only=True : only the integer Linear weights may change; after every step they are snapped back onto the integer grid (scales fixed); biases / norms frozen.
-    integer_only=False: full-precision model, all parameters train."""
+    quantized=True : the model is the deployed quantized one and no full-precision copy exists. Only its integer Linear weights may change; after every step they are snapped back onto the integer grid (scales fixed); biases / norms frozen.
+    quantized=False: full-precision model (reference only), all parameters train."""
     m = copy.deepcopy(m0); torch.manual_seed(seed + 7); lr = 3e-4 if method == "GaussAmnesiac" else hp
-    params = [l.weight for l in qlinears(m)] if integer_only else list(m.parameters())
+    params = [l.weight for l in qlinears(m)] if quantized else list(m.parameters())
     for p in m.parameters(): p.requires_grad_(any(p is q for q in params))
     teacher = None
     if method == "Blindspot": torch.manual_seed(1000 + seed); teacher = make_model(arch).eval(); torch.manual_seed(seed + 7)
@@ -23,7 +23,7 @@ def unlearn(m0, method, hp, D, arch, integer_only, seed):
     if method == "GaussAmnesiac":
         with torch.no_grad():
             for p in params: p.add_(torch.randn_like(p) * hp * p.std())
-            if integer_only: project(m)
+            if quantized: project(m)
         steps = 200
     opt = torch.optim.Adam(params, lr); q0 = [l.weight.detach().clone() for l in qlinears(m0)]; orig = copy.deepcopy(m0).eval()
     for st in range(steps):
@@ -41,6 +41,6 @@ def unlearn(m0, method, hp, D, arch, integer_only, seed):
             loss = F.mse_loss(m(xr), to_r) + lret + F.mse_loss(m(xf), to_f)
         else: raise ValueError(method)
         opt.zero_grad(); loss.backward(); torch.nn.utils.clip_grad_norm_(params, 1.0); opt.step()
-        if integer_only: project(m)
+        if quantized: project(m)
     changed = sum((a != l.weight.detach()).sum().item() for a, l in zip(q0, qlinears(m))) / sum(a.numel() for a in q0)
     return m.eval(), changed
