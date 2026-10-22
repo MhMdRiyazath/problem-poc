@@ -1,0 +1,316 @@
+arch,tech,bits,method,seeds,median_changed,seeds_stuck,seeds_same_as_fp,median_forget_score,median_forget_score_fp,median_retain_ratio,seeds_passed_strict_rule,seeds_fp_passed,verdict
+dlinear,channel,2,Blindspot,3,0.0,3,0,0.0,5.6,1.0,0,0,stuck (<1% weights changed)
+dlinear,channel,2,GaussAmnesiac,3,0.0,3,0,0.0,0.45,1.0,0,0,stuck (<1% weights changed)
+dlinear,channel,2,MaxLoss,3,0.0,3,0,0.0,3.13,1.0,0,0,stuck (<1% weights changed)
+dlinear,channel,2,NoisyLabel,3,0.0,3,0,0.0,-0.87,1.0,0,0,stuck (<1% weights changed)
+dlinear,channel,2,RandLabel,3,0.0,3,0,0.0,6.6,1.0,0,0,stuck (<1% weights changed)
+dlinear,channel,2,TSU,3,0.0,3,0,0.0,-0.86,1.0,0,0,stuck (<1% weights changed)
+dlinear,channel,2,ZeroLabel,3,0.0,3,0,0.0,6.2,1.0,0,0,stuck (<1% weights changed)
+dlinear,channel,3,Blindspot,3,0.0,3,0,0.0,5.6,1.0,0,0,stuck (<1% weights changed)
+dlinear,channel,3,GaussAmnesiac,3,0.0002,3,0,0.0,0.45,1.0,0,0,stuck (<1% weights changed)
+dlinear,channel,3,MaxLoss,3,0.0,3,0,0.0,3.13,1.0,0,0,stuck (<1% weights changed)
+dlinear,channel,3,NoisyLabel,3,0.0,3,0,0.0,-0.87,1.0,0,0,stuck (<1% weights changed)
+dlinear,channel,3,RandLabel,3,0.0,3,0,0.0,6.6,1.0,0,0,stuck (<1% weights changed)
+dlinear,channel,3,TSU,3,0.0,3,0,0.0,-0.86,1.0,0,0,stuck (<1% weights changed)
+dlinear,channel,3,ZeroLabel,3,0.0,3,0,0.0,6.2,1.0,0,0,stuck (<1% weights changed)
+dlinear,channel,4,Blindspot,3,0.0,3,0,0.0,5.6,1.0,0,0,stuck (<1% weights changed)
+dlinear,channel,4,GaussAmnesiac,3,0.0422,0,0,0.04,0.45,1.01,0,0,moved
+dlinear,channel,4,MaxLoss,3,0.0,3,0,0.0,3.13,1.0,0,0,stuck (<1% weights changed)
+dlinear,channel,4,NoisyLabel,3,0.0,3,0,0.0,-0.87,1.0,0,0,stuck (<1% weights changed)
+dlinear,channel,4,RandLabel,3,0.0,3,0,0.0,6.6,1.0,0,0,stuck (<1% weights changed)
+dlinear,channel,4,TSU,3,0.0,3,0,0.0,-0.86,1.0,0,0,stuck (<1% weights changed)
+dlinear,channel,4,ZeroLabel,3,0.0,3,0,0.0,6.2,1.0,0,0,stuck (<1% weights changed)
+dlinear,channel,6,Blindspot,3,0.0,3,0,0.0,5.6,1.0,0,0,stuck (<1% weights changed)
+dlinear,channel,6,GaussAmnesiac,3,0.5541,0,1,0.09,0.45,1.02,0,0,moved
+dlinear,channel,6,MaxLoss,3,0.0,3,0,0.0,3.13,1.0,0,0,stuck (<1% weights changed)
+dlinear,channel,6,NoisyLabel,3,0.0,3,0,0.0,-0.87,1.0,0,0,stuck (<1% weights changed)
+dlinear,channel,6,RandLabel,3,0.0,3,0,0.0,6.6,1.0,0,0,stuck (<1% weights changed)
+dlinear,channel,6,TSU,3,0.0,3,0,0.0,-0.86,1.0,0,0,stuck (<1% weights changed)
+dlinear,channel,6,ZeroLabel,3,0.0,3,0,0.0,6.2,1.0,0,0,stuck (<1% weights changed)
+dlinear,channel,8,Blindspot,3,0.9561,0,0,4.15,5.6,1.67,0,0,moved
+dlinear,channel,8,GaussAmnesiac,3,0.8806,0,1,0.07,0.45,1.02,0,0,moved
+dlinear,channel,8,MaxLoss,3,0.0,3,0,0.0,3.13,1.0,0,0,stuck (<1% weights changed)
+dlinear,channel,8,NoisyLabel,3,0.9162,0,3,-0.65,-0.87,1.09,0,0,moved
+dlinear,channel,8,RandLabel,3,0.9408,0,0,5.2,6.6,1.9,0,0,moved
+dlinear,channel,8,TSU,3,0.9165,0,2,-0.67,-0.86,1.09,0,0,moved
+dlinear,channel,8,ZeroLabel,3,0.9405,0,0,4.97,6.2,1.87,0,0,moved
+dlinear,clip,2,Blindspot,3,0.0,3,0,0.0,5.6,1.0,0,0,stuck (<1% weights changed)
+dlinear,clip,2,GaussAmnesiac,3,0.0,3,0,0.0,0.45,1.0,0,0,stuck (<1% weights changed)
+dlinear,clip,2,MaxLoss,3,0.0,3,0,0.0,3.13,1.0,0,0,stuck (<1% weights changed)
+dlinear,clip,2,NoisyLabel,3,0.0,3,0,0.0,-0.87,1.0,0,0,stuck (<1% weights changed)
+dlinear,clip,2,RandLabel,3,0.0,3,0,0.0,6.6,1.0,0,0,stuck (<1% weights changed)
+dlinear,clip,2,TSU,3,0.0,3,0,0.0,-0.86,1.0,0,0,stuck (<1% weights changed)
+dlinear,clip,2,ZeroLabel,3,0.0,3,0,0.0,6.2,1.0,0,0,stuck (<1% weights changed)
+dlinear,clip,3,Blindspot,3,0.0,3,0,0.0,5.6,1.0,0,0,stuck (<1% weights changed)
+dlinear,clip,3,GaussAmnesiac,3,0.0007,3,0,-0.0,0.45,1.0,0,0,stuck (<1% weights changed)
+dlinear,clip,3,MaxLoss,3,0.0,3,0,0.0,3.13,1.0,0,0,stuck (<1% weights changed)
+dlinear,clip,3,NoisyLabel,3,0.0,3,0,0.0,-0.87,1.0,0,0,stuck (<1% weights changed)
+dlinear,clip,3,RandLabel,3,0.0,3,0,0.0,6.6,1.0,0,0,stuck (<1% weights changed)
+dlinear,clip,3,TSU,3,0.0,3,0,0.0,-0.86,1.0,0,0,stuck (<1% weights changed)
+dlinear,clip,3,ZeroLabel,3,0.0,3,0,0.0,6.2,1.0,0,0,stuck (<1% weights changed)
+dlinear,clip,4,Blindspot,3,0.0,3,0,0.0,5.6,1.0,0,0,stuck (<1% weights changed)
+dlinear,clip,4,GaussAmnesiac,3,0.0683,0,0,0.06,0.45,1.01,0,0,moved
+dlinear,clip,4,MaxLoss,3,0.0,3,0,0.0,3.13,1.0,0,0,stuck (<1% weights changed)
+dlinear,clip,4,NoisyLabel,3,0.0,3,0,0.0,-0.87,1.0,0,0,stuck (<1% weights changed)
+dlinear,clip,4,RandLabel,3,0.0,3,0,0.0,6.6,1.0,0,0,stuck (<1% weights changed)
+dlinear,clip,4,TSU,3,0.0,3,0,0.0,-0.86,1.0,0,0,stuck (<1% weights changed)
+dlinear,clip,4,ZeroLabel,3,0.0,3,0,0.0,6.2,1.0,0,0,stuck (<1% weights changed)
+dlinear,clip,6,Blindspot,3,0.0,3,0,0.0,5.6,1.0,0,0,stuck (<1% weights changed)
+dlinear,clip,6,GaussAmnesiac,3,0.6321,0,0,0.07,0.45,1.02,0,0,moved
+dlinear,clip,6,MaxLoss,3,0.0,3,0,0.0,3.13,1.0,0,0,stuck (<1% weights changed)
+dlinear,clip,6,NoisyLabel,3,0.0,3,0,0.0,-0.87,1.0,0,0,stuck (<1% weights changed)
+dlinear,clip,6,RandLabel,3,0.0,3,0,0.0,6.6,1.0,0,0,stuck (<1% weights changed)
+dlinear,clip,6,TSU,3,0.0,3,0,0.0,-0.86,1.0,0,0,stuck (<1% weights changed)
+dlinear,clip,6,ZeroLabel,3,0.0,3,0,0.0,6.2,1.0,0,0,stuck (<1% weights changed)
+dlinear,clip,8,Blindspot,3,0.9633,0,2,5.54,5.6,1.79,0,0,moved
+dlinear,clip,8,GaussAmnesiac,3,0.9024,0,0,0.05,0.45,1.02,0,0,moved
+dlinear,clip,8,MaxLoss,3,0.0,3,0,0.0,3.13,1.0,0,0,stuck (<1% weights changed)
+dlinear,clip,8,NoisyLabel,3,0.9353,0,3,-0.79,-0.87,1.07,0,0,moved
+dlinear,clip,8,RandLabel,3,0.9497,0,0,6.04,6.6,1.94,0,0,moved
+dlinear,clip,8,TSU,3,0.9371,0,3,-0.83,-0.86,1.07,0,0,moved
+dlinear,clip,8,ZeroLabel,3,0.9501,0,1,5.85,6.2,1.92,0,0,moved
+dlinear,tensor,2,Blindspot,3,0.0,3,0,0.0,5.6,1.0,0,0,stuck (<1% weights changed)
+dlinear,tensor,2,GaussAmnesiac,3,0.0,3,0,0.0,0.45,1.0,0,0,stuck (<1% weights changed)
+dlinear,tensor,2,MaxLoss,3,0.0,3,0,0.0,3.13,1.0,0,0,stuck (<1% weights changed)
+dlinear,tensor,2,NoisyLabel,3,0.0,3,0,0.0,-0.87,1.0,0,0,stuck (<1% weights changed)
+dlinear,tensor,2,RandLabel,3,0.0,3,0,0.0,6.6,1.0,0,0,stuck (<1% weights changed)
+dlinear,tensor,2,TSU,3,0.0,3,0,0.0,-0.86,1.0,0,0,stuck (<1% weights changed)
+dlinear,tensor,2,ZeroLabel,3,0.0,3,0,0.0,6.2,1.0,0,0,stuck (<1% weights changed)
+dlinear,tensor,3,Blindspot,3,0.0,3,0,0.0,5.6,1.0,0,0,stuck (<1% weights changed)
+dlinear,tensor,3,GaussAmnesiac,3,0.0,3,0,0.0,0.45,1.0,0,0,stuck (<1% weights changed)
+dlinear,tensor,3,MaxLoss,3,0.0,3,0,0.0,3.13,1.0,0,0,stuck (<1% weights changed)
+dlinear,tensor,3,NoisyLabel,3,0.0,3,0,0.0,-0.87,1.0,0,0,stuck (<1% weights changed)
+dlinear,tensor,3,RandLabel,3,0.0,3,0,0.0,6.6,1.0,0,0,stuck (<1% weights changed)
+dlinear,tensor,3,TSU,3,0.0,3,0,0.0,-0.86,1.0,0,0,stuck (<1% weights changed)
+dlinear,tensor,3,ZeroLabel,3,0.0,3,0,0.0,6.2,1.0,0,0,stuck (<1% weights changed)
+dlinear,tensor,4,Blindspot,3,0.0,3,0,0.0,5.6,1.0,0,0,stuck (<1% weights changed)
+dlinear,tensor,4,GaussAmnesiac,3,0.0031,2,0,-0.0,0.45,1.0,0,0,stuck (<1% weights changed)
+dlinear,tensor,4,MaxLoss,3,0.0,3,0,0.0,3.13,1.0,0,0,stuck (<1% weights changed)
+dlinear,tensor,4,NoisyLabel,3,0.0,3,0,0.0,-0.87,1.0,0,0,stuck (<1% weights changed)
+dlinear,tensor,4,RandLabel,3,0.0,3,0,0.0,6.6,1.0,0,0,stuck (<1% weights changed)
+dlinear,tensor,4,TSU,3,0.0,3,0,0.0,-0.86,1.0,0,0,stuck (<1% weights changed)
+dlinear,tensor,4,ZeroLabel,3,0.0,3,0,0.0,6.2,1.0,0,0,stuck (<1% weights changed)
+dlinear,tensor,6,Blindspot,3,0.0,3,0,0.0,5.6,1.0,0,0,stuck (<1% weights changed)
+dlinear,tensor,6,GaussAmnesiac,3,0.4054,0,1,0.13,0.45,1.02,0,0,moved
+dlinear,tensor,6,MaxLoss,3,0.0,3,0,0.0,3.13,1.0,0,0,stuck (<1% weights changed)
+dlinear,tensor,6,NoisyLabel,3,0.0,3,0,0.0,-0.87,1.0,0,0,stuck (<1% weights changed)
+dlinear,tensor,6,RandLabel,3,0.0,3,0,0.0,6.6,1.0,0,0,stuck (<1% weights changed)
+dlinear,tensor,6,TSU,3,0.0,3,0,0.0,-0.86,1.0,0,0,stuck (<1% weights changed)
+dlinear,tensor,6,ZeroLabel,3,0.0,3,0,0.0,6.2,1.0,0,0,stuck (<1% weights changed)
+dlinear,tensor,8,Blindspot,3,0.9477,0,0,3.05,5.6,1.57,0,0,moved
+dlinear,tensor,8,GaussAmnesiac,3,0.8312,0,1,0.09,0.45,1.02,0,0,moved
+dlinear,tensor,8,MaxLoss,3,0.0,3,0,0.0,3.13,1.0,0,0,stuck (<1% weights changed)
+dlinear,tensor,8,NoisyLabel,3,0.9199,0,0,-0.53,-0.87,1.07,0,0,moved
+dlinear,tensor,8,RandLabel,3,0.9422,0,0,3.77,6.6,1.69,0,0,moved
+dlinear,tensor,8,TSU,3,0.9116,0,0,-0.5,-0.86,1.07,0,0,moved
+dlinear,tensor,8,ZeroLabel,3,0.916,0,0,4.11,6.2,1.77,0,0,moved
+mlp,channel,2,Blindspot,2,0.0,2,0,0.0,1.45,1.0,0,0,stuck (<1% weights changed)
+mlp,channel,2,GaussAmnesiac,2,0.0,2,0,0.0,0.06,1.0,0,0,stuck (<1% weights changed)
+mlp,channel,2,MaxLoss,2,0.0,2,0,0.0,17.09,1.0,0,0,stuck (<1% weights changed)
+mlp,channel,2,NoisyLabel,2,0.0,2,0,0.0,-0.05,1.0,0,0,stuck (<1% weights changed)
+mlp,channel,2,RandLabel,2,0.0,2,0,0.0,1.84,1.0,0,0,stuck (<1% weights changed)
+mlp,channel,2,TSU,2,0.0,2,0,0.0,-0.05,1.0,0,0,stuck (<1% weights changed)
+mlp,channel,2,ZeroLabel,2,0.0,2,0,0.0,1.87,1.0,0,0,stuck (<1% weights changed)
+mlp,channel,3,Blindspot,2,0.0,2,0,0.0,1.45,1.0,0,0,stuck (<1% weights changed)
+mlp,channel,3,GaussAmnesiac,2,0.0,2,0,-0.0,0.06,1.0,0,0,stuck (<1% weights changed)
+mlp,channel,3,MaxLoss,2,0.0,2,0,0.0,17.09,1.0,0,0,stuck (<1% weights changed)
+mlp,channel,3,NoisyLabel,2,0.0,2,0,0.0,-0.05,1.0,0,0,stuck (<1% weights changed)
+mlp,channel,3,RandLabel,2,0.0,2,0,0.0,1.84,1.0,0,0,stuck (<1% weights changed)
+mlp,channel,3,TSU,2,0.0,2,0,0.0,-0.05,1.0,0,0,stuck (<1% weights changed)
+mlp,channel,3,ZeroLabel,2,0.0,2,0,0.0,1.87,1.0,0,0,stuck (<1% weights changed)
+mlp,channel,4,Blindspot,2,0.0,2,0,0.0,1.45,1.0,0,0,stuck (<1% weights changed)
+mlp,channel,4,GaussAmnesiac,2,0.0257,0,2,0.01,0.06,1.01,0,0,moved
+mlp,channel,4,MaxLoss,2,0.0,2,0,0.0,17.09,1.0,0,0,stuck (<1% weights changed)
+mlp,channel,4,NoisyLabel,2,0.0,2,0,0.0,-0.05,1.0,0,0,stuck (<1% weights changed)
+mlp,channel,4,RandLabel,2,0.0,2,0,0.0,1.84,1.0,0,0,stuck (<1% weights changed)
+mlp,channel,4,TSU,2,0.0,2,0,0.0,-0.05,1.0,0,0,stuck (<1% weights changed)
+mlp,channel,4,ZeroLabel,2,0.0,2,0,0.0,1.87,1.0,0,0,stuck (<1% weights changed)
+mlp,channel,6,Blindspot,2,0.0,2,0,0.0,1.45,1.0,0,0,stuck (<1% weights changed)
+mlp,channel,6,GaussAmnesiac,2,0.5835,0,2,0.02,0.06,1.02,0,0,moved
+mlp,channel,6,MaxLoss,2,0.0,2,0,0.0,17.09,1.0,0,0,stuck (<1% weights changed)
+mlp,channel,6,NoisyLabel,2,0.0,2,0,0.0,-0.05,1.0,0,0,stuck (<1% weights changed)
+mlp,channel,6,RandLabel,2,0.0,2,0,0.0,1.84,1.0,0,0,stuck (<1% weights changed)
+mlp,channel,6,TSU,2,0.0,2,0,0.0,-0.05,1.0,0,0,stuck (<1% weights changed)
+mlp,channel,6,ZeroLabel,2,0.0,2,0,0.0,1.87,1.0,0,0,stuck (<1% weights changed)
+mlp,channel,8,Blindspot,2,0.8097,0,0,0.76,1.45,1.2,0,0,moved
+mlp,channel,8,GaussAmnesiac,2,0.8912,0,2,0.02,0.06,1.01,0,0,moved
+mlp,channel,8,MaxLoss,2,0.0,2,0,0.0,17.09,1.0,0,0,stuck (<1% weights changed)
+mlp,channel,8,NoisyLabel,2,0.8039,0,2,-0.0,-0.05,1.01,0,0,moved
+mlp,channel,8,RandLabel,2,0.8155,0,0,0.89,1.84,1.37,0,0,moved
+mlp,channel,8,TSU,2,0.8038,0,2,-0.0,-0.05,1.01,0,0,moved
+mlp,channel,8,ZeroLabel,2,0.8139,0,0,0.99,1.87,1.43,0,0,moved
+mlp,clip,2,Blindspot,2,0.0,2,0,0.0,1.45,1.0,0,0,stuck (<1% weights changed)
+mlp,clip,2,GaussAmnesiac,2,0.0,2,0,0.0,0.06,1.0,0,0,stuck (<1% weights changed)
+mlp,clip,2,MaxLoss,2,0.0,2,0,0.0,17.09,1.0,0,0,stuck (<1% weights changed)
+mlp,clip,2,NoisyLabel,2,0.0,2,0,0.0,-0.05,1.0,0,0,stuck (<1% weights changed)
+mlp,clip,2,RandLabel,2,0.0,2,0,0.0,1.84,1.0,0,0,stuck (<1% weights changed)
+mlp,clip,2,TSU,2,0.0,2,0,0.0,-0.05,1.0,0,0,stuck (<1% weights changed)
+mlp,clip,2,ZeroLabel,2,0.0,2,0,0.0,1.87,1.0,0,0,stuck (<1% weights changed)
+mlp,clip,3,Blindspot,2,0.0,2,0,0.0,1.45,1.0,0,0,stuck (<1% weights changed)
+mlp,clip,3,GaussAmnesiac,2,0.0001,2,0,0.0,0.06,1.0,0,0,stuck (<1% weights changed)
+mlp,clip,3,MaxLoss,2,0.0,2,0,0.0,17.09,1.0,0,0,stuck (<1% weights changed)
+mlp,clip,3,NoisyLabel,2,0.0,2,0,0.0,-0.05,1.0,0,0,stuck (<1% weights changed)
+mlp,clip,3,RandLabel,2,0.0,2,0,0.0,1.84,1.0,0,0,stuck (<1% weights changed)
+mlp,clip,3,TSU,2,0.0,2,0,0.0,-0.05,1.0,0,0,stuck (<1% weights changed)
+mlp,clip,3,ZeroLabel,2,0.0,2,0,0.0,1.87,1.0,0,0,stuck (<1% weights changed)
+mlp,clip,4,Blindspot,2,0.0,2,0,0.0,1.45,1.0,0,0,stuck (<1% weights changed)
+mlp,clip,4,GaussAmnesiac,2,0.0682,0,2,0.02,0.06,1.01,0,0,moved
+mlp,clip,4,MaxLoss,2,0.0,2,0,0.0,17.09,1.0,0,0,stuck (<1% weights changed)
+mlp,clip,4,NoisyLabel,2,0.0,2,0,0.0,-0.05,1.0,0,0,stuck (<1% weights changed)
+mlp,clip,4,RandLabel,2,0.0,2,0,0.0,1.84,1.0,0,0,stuck (<1% weights changed)
+mlp,clip,4,TSU,2,0.0,2,0,0.0,-0.05,1.0,0,0,stuck (<1% weights changed)
+mlp,clip,4,ZeroLabel,2,0.0,2,0,0.0,1.87,1.0,0,0,stuck (<1% weights changed)
+mlp,clip,6,Blindspot,2,0.0,2,0,0.0,1.45,1.0,0,0,stuck (<1% weights changed)
+mlp,clip,6,GaussAmnesiac,2,0.6673,0,2,0.02,0.06,1.02,0,0,moved
+mlp,clip,6,MaxLoss,2,0.0,2,0,0.0,17.09,1.0,0,0,stuck (<1% weights changed)
+mlp,clip,6,NoisyLabel,2,0.0,2,0,0.0,-0.05,1.0,0,0,stuck (<1% weights changed)
+mlp,clip,6,RandLabel,2,0.0,2,0,0.0,1.84,1.0,0,0,stuck (<1% weights changed)
+mlp,clip,6,TSU,2,0.0,2,0,0.0,-0.05,1.0,0,0,stuck (<1% weights changed)
+mlp,clip,6,ZeroLabel,2,0.0,2,0,0.0,1.87,1.0,0,0,stuck (<1% weights changed)
+mlp,clip,8,Blindspot,2,0.9292,0,0,1.03,1.45,1.24,0,0,moved
+mlp,clip,8,GaussAmnesiac,2,0.9117,0,2,0.02,0.06,1.01,0,0,moved
+mlp,clip,8,MaxLoss,2,0.0,2,0,0.0,17.09,1.0,0,0,stuck (<1% weights changed)
+mlp,clip,8,NoisyLabel,2,0.909,0,2,-0.04,-0.05,1.01,0,0,moved
+mlp,clip,8,RandLabel,2,0.9329,0,0,1.2,1.84,1.42,0,0,moved
+mlp,clip,8,TSU,2,0.9091,0,2,-0.04,-0.05,1.01,0,0,moved
+mlp,clip,8,ZeroLabel,2,0.9355,0,0,1.31,1.87,1.48,0,0,moved
+mlp,tensor,2,Blindspot,2,0.0,2,0,0.0,1.45,1.0,0,0,stuck (<1% weights changed)
+mlp,tensor,2,GaussAmnesiac,2,0.0,2,0,0.0,0.06,1.0,0,0,stuck (<1% weights changed)
+mlp,tensor,2,MaxLoss,2,0.0,2,0,0.0,17.09,1.0,0,0,stuck (<1% weights changed)
+mlp,tensor,2,NoisyLabel,2,0.0,2,0,0.0,-0.05,1.0,0,0,stuck (<1% weights changed)
+mlp,tensor,2,RandLabel,2,0.0,2,0,0.0,1.84,1.0,0,0,stuck (<1% weights changed)
+mlp,tensor,2,TSU,2,0.0,2,0,0.0,-0.05,1.0,0,0,stuck (<1% weights changed)
+mlp,tensor,2,ZeroLabel,2,0.0,2,0,0.0,1.87,1.0,0,0,stuck (<1% weights changed)
+mlp,tensor,3,Blindspot,2,0.0,2,0,0.0,1.45,1.0,0,0,stuck (<1% weights changed)
+mlp,tensor,3,GaussAmnesiac,2,0.0,2,0,0.0,0.06,1.0,0,0,stuck (<1% weights changed)
+mlp,tensor,3,MaxLoss,2,0.0,2,0,0.0,17.09,1.0,0,0,stuck (<1% weights changed)
+mlp,tensor,3,NoisyLabel,2,0.0,2,0,0.0,-0.05,1.0,0,0,stuck (<1% weights changed)
+mlp,tensor,3,RandLabel,2,0.0,2,0,0.0,1.84,1.0,0,0,stuck (<1% weights changed)
+mlp,tensor,3,TSU,2,0.0,2,0,0.0,-0.05,1.0,0,0,stuck (<1% weights changed)
+mlp,tensor,3,ZeroLabel,2,0.0,2,0,0.0,1.87,1.0,0,0,stuck (<1% weights changed)
+mlp,tensor,4,Blindspot,2,0.0,2,0,0.0,1.45,1.0,0,0,stuck (<1% weights changed)
+mlp,tensor,4,GaussAmnesiac,2,0.0004,2,0,0.0,0.06,1.0,0,0,stuck (<1% weights changed)
+mlp,tensor,4,MaxLoss,2,0.0,2,0,0.0,17.09,1.0,0,0,stuck (<1% weights changed)
+mlp,tensor,4,NoisyLabel,2,0.0,2,0,0.0,-0.05,1.0,0,0,stuck (<1% weights changed)
+mlp,tensor,4,RandLabel,2,0.0,2,0,0.0,1.84,1.0,0,0,stuck (<1% weights changed)
+mlp,tensor,4,TSU,2,0.0,2,0,0.0,-0.05,1.0,0,0,stuck (<1% weights changed)
+mlp,tensor,4,ZeroLabel,2,0.0,2,0,0.0,1.87,1.0,0,0,stuck (<1% weights changed)
+mlp,tensor,6,Blindspot,2,0.0,2,0,0.0,1.45,1.0,0,0,stuck (<1% weights changed)
+mlp,tensor,6,GaussAmnesiac,2,0.3445,0,2,0.02,0.06,1.02,0,0,moved
+mlp,tensor,6,MaxLoss,2,0.0,2,0,0.0,17.09,1.0,0,0,stuck (<1% weights changed)
+mlp,tensor,6,NoisyLabel,2,0.0,2,0,0.0,-0.05,1.0,0,0,stuck (<1% weights changed)
+mlp,tensor,6,RandLabel,2,0.0,2,0,0.0,1.84,1.0,0,0,stuck (<1% weights changed)
+mlp,tensor,6,TSU,2,0.0,2,0,0.0,-0.05,1.0,0,0,stuck (<1% weights changed)
+mlp,tensor,6,ZeroLabel,2,0.0,2,0,0.0,1.87,1.0,0,0,stuck (<1% weights changed)
+mlp,tensor,8,Blindspot,2,0.0343,0,0,0.26,1.45,1.17,0,0,moved
+mlp,tensor,8,GaussAmnesiac,2,0.816,0,2,0.02,0.06,1.01,0,0,moved
+mlp,tensor,8,MaxLoss,2,0.0,2,0,0.0,17.09,1.0,0,0,stuck (<1% weights changed)
+mlp,tensor,8,NoisyLabel,2,0.0334,0,2,0.0,-0.05,1.0,0,0,moved
+mlp,tensor,8,RandLabel,2,0.0331,0,0,0.31,1.84,1.3,0,0,moved
+mlp,tensor,8,TSU,2,0.0334,0,2,0.0,-0.05,1.0,0,0,moved
+mlp,tensor,8,ZeroLabel,2,0.0336,0,0,0.37,1.87,1.33,0,0,moved
+patchtst,channel,2,Blindspot,1,0.0,1,0,0.0,2.47,1.0,0,0,stuck (<1% weights changed)
+patchtst,channel,2,GaussAmnesiac,1,0.0,1,0,0.0,0.11,1.0,0,0,stuck (<1% weights changed)
+patchtst,channel,2,MaxLoss,1,0.0,1,0,0.0,21.25,1.0,0,0,stuck (<1% weights changed)
+patchtst,channel,2,NoisyLabel,1,0.0,1,0,0.0,-0.09,1.0,0,0,stuck (<1% weights changed)
+patchtst,channel,2,RandLabel,1,0.0,1,0,0.0,2.56,1.0,0,0,stuck (<1% weights changed)
+patchtst,channel,2,TSU,1,0.0,1,0,0.0,-0.08,1.0,0,0,stuck (<1% weights changed)
+patchtst,channel,2,ZeroLabel,1,0.0,1,0,0.0,2.66,1.0,0,0,stuck (<1% weights changed)
+patchtst,channel,3,Blindspot,1,0.0,1,0,0.0,2.47,1.0,0,0,stuck (<1% weights changed)
+patchtst,channel,3,GaussAmnesiac,1,0.0004,1,0,0.01,0.11,1.0,0,0,stuck (<1% weights changed)
+patchtst,channel,3,MaxLoss,1,0.0,1,0,0.0,21.25,1.0,0,0,stuck (<1% weights changed)
+patchtst,channel,3,NoisyLabel,1,0.0,1,0,0.0,-0.09,1.0,0,0,stuck (<1% weights changed)
+patchtst,channel,3,RandLabel,1,0.0,1,0,0.0,2.56,1.0,0,0,stuck (<1% weights changed)
+patchtst,channel,3,TSU,1,0.0,1,0,0.0,-0.08,1.0,0,0,stuck (<1% weights changed)
+patchtst,channel,3,ZeroLabel,1,0.0,1,0,0.0,2.66,1.0,0,0,stuck (<1% weights changed)
+patchtst,channel,4,Blindspot,1,0.0,1,0,0.0,2.47,1.0,0,0,stuck (<1% weights changed)
+patchtst,channel,4,GaussAmnesiac,1,0.0643,0,1,0.06,0.11,0.99,0,0,moved
+patchtst,channel,4,MaxLoss,1,0.0,1,0,0.0,21.25,1.0,0,0,stuck (<1% weights changed)
+patchtst,channel,4,NoisyLabel,1,0.0,1,0,0.0,-0.09,1.0,0,0,stuck (<1% weights changed)
+patchtst,channel,4,RandLabel,1,0.0,1,0,0.0,2.56,1.0,0,0,stuck (<1% weights changed)
+patchtst,channel,4,TSU,1,0.0,1,0,0.0,-0.08,1.0,0,0,stuck (<1% weights changed)
+patchtst,channel,4,ZeroLabel,1,0.0,1,0,0.0,2.66,1.0,0,0,stuck (<1% weights changed)
+patchtst,channel,6,Blindspot,1,0.0,1,0,0.0,2.47,1.0,0,0,stuck (<1% weights changed)
+patchtst,channel,6,GaussAmnesiac,1,0.6207,0,1,0.07,0.11,0.95,0,0,moved
+patchtst,channel,6,MaxLoss,1,0.0,1,0,0.0,21.25,1.0,0,0,stuck (<1% weights changed)
+patchtst,channel,6,NoisyLabel,1,0.0,1,0,0.0,-0.09,1.0,0,0,stuck (<1% weights changed)
+patchtst,channel,6,RandLabel,1,0.0,1,0,0.0,2.56,1.0,0,0,stuck (<1% weights changed)
+patchtst,channel,6,TSU,1,0.0,1,0,0.0,-0.08,1.0,0,0,stuck (<1% weights changed)
+patchtst,channel,6,ZeroLabel,1,0.0,1,0,0.0,2.66,1.0,0,0,stuck (<1% weights changed)
+patchtst,channel,8,Blindspot,1,0.8795,0,0,1.77,2.47,1.27,0,0,moved
+patchtst,channel,8,GaussAmnesiac,1,0.8977,0,1,0.06,0.11,0.95,0,0,moved
+patchtst,channel,8,MaxLoss,1,0.0,1,0,0.0,21.25,1.0,0,0,stuck (<1% weights changed)
+patchtst,channel,8,NoisyLabel,1,0.8644,0,1,-0.05,-0.09,1.03,0,0,moved
+patchtst,channel,8,RandLabel,1,0.878,0,0,1.68,2.56,1.48,0,0,moved
+patchtst,channel,8,TSU,1,0.862,0,1,-0.04,-0.08,1.03,0,0,moved
+patchtst,channel,8,ZeroLabel,1,0.8791,0,0,1.81,2.66,1.44,0,0,moved
+patchtst,clip,2,Blindspot,1,0.0,1,0,0.0,2.47,1.0,0,0,stuck (<1% weights changed)
+patchtst,clip,2,GaussAmnesiac,1,0.0,1,0,0.0,0.11,1.0,0,0,stuck (<1% weights changed)
+patchtst,clip,2,MaxLoss,1,0.0,1,0,0.0,21.25,1.0,0,0,stuck (<1% weights changed)
+patchtst,clip,2,NoisyLabel,1,0.0,1,0,0.0,-0.09,1.0,0,0,stuck (<1% weights changed)
+patchtst,clip,2,RandLabel,1,0.0,1,0,0.0,2.56,1.0,0,0,stuck (<1% weights changed)
+patchtst,clip,2,TSU,1,0.0,1,0,0.0,-0.08,1.0,0,0,stuck (<1% weights changed)
+patchtst,clip,2,ZeroLabel,1,0.0,1,0,0.0,2.66,1.0,0,0,stuck (<1% weights changed)
+patchtst,clip,3,Blindspot,1,0.0,1,0,0.0,2.47,1.0,0,0,stuck (<1% weights changed)
+patchtst,clip,3,GaussAmnesiac,1,0.0006,1,0,0.01,0.11,0.99,0,0,stuck (<1% weights changed)
+patchtst,clip,3,MaxLoss,1,0.0,1,0,0.0,21.25,1.0,0,0,stuck (<1% weights changed)
+patchtst,clip,3,NoisyLabel,1,0.0,1,0,0.0,-0.09,1.0,0,0,stuck (<1% weights changed)
+patchtst,clip,3,RandLabel,1,0.0,1,0,0.0,2.56,1.0,0,0,stuck (<1% weights changed)
+patchtst,clip,3,TSU,1,0.0,1,0,0.0,-0.08,1.0,0,0,stuck (<1% weights changed)
+patchtst,clip,3,ZeroLabel,1,0.0,1,0,0.0,2.66,1.0,0,0,stuck (<1% weights changed)
+patchtst,clip,4,Blindspot,1,0.0,1,0,0.0,2.47,1.0,0,0,stuck (<1% weights changed)
+patchtst,clip,4,GaussAmnesiac,1,0.0911,0,1,0.07,0.11,1.0,0,0,moved
+patchtst,clip,4,MaxLoss,1,0.0,1,0,0.0,21.25,1.0,0,0,stuck (<1% weights changed)
+patchtst,clip,4,NoisyLabel,1,0.0,1,0,0.0,-0.09,1.0,0,0,stuck (<1% weights changed)
+patchtst,clip,4,RandLabel,1,0.0,1,0,0.0,2.56,1.0,0,0,stuck (<1% weights changed)
+patchtst,clip,4,TSU,1,0.0,1,0,0.0,-0.08,1.0,0,0,stuck (<1% weights changed)
+patchtst,clip,4,ZeroLabel,1,0.0,1,0,0.0,2.66,1.0,0,0,stuck (<1% weights changed)
+patchtst,clip,6,Blindspot,1,0.0011,1,0,0.0,2.47,1.0,0,0,stuck (<1% weights changed)
+patchtst,clip,6,GaussAmnesiac,1,0.6847,0,1,0.07,0.11,0.95,0,0,moved
+patchtst,clip,6,MaxLoss,1,0.0,1,0,0.0,21.25,1.0,0,0,stuck (<1% weights changed)
+patchtst,clip,6,NoisyLabel,1,0.0,1,0,0.0,-0.09,1.0,0,0,stuck (<1% weights changed)
+patchtst,clip,6,RandLabel,1,0.0007,1,0,-0.0,2.56,1.0,0,0,stuck (<1% weights changed)
+patchtst,clip,6,TSU,1,0.0,1,0,0.0,-0.08,1.0,0,0,stuck (<1% weights changed)
+patchtst,clip,6,ZeroLabel,1,0.0011,1,0,0.0,2.66,1.0,0,0,stuck (<1% weights changed)
+patchtst,clip,8,Blindspot,1,0.9348,0,0,1.93,2.47,1.29,0,0,moved
+patchtst,clip,8,GaussAmnesiac,1,0.914,0,1,0.07,0.11,0.95,0,0,moved
+patchtst,clip,8,MaxLoss,1,0.0,1,0,0.0,21.25,1.0,0,0,stuck (<1% weights changed)
+patchtst,clip,8,NoisyLabel,1,0.9201,0,1,-0.07,-0.09,1.06,0,0,moved
+patchtst,clip,8,RandLabel,1,0.9343,0,0,1.89,2.56,1.52,0,0,moved
+patchtst,clip,8,TSU,1,0.9189,0,1,-0.07,-0.08,1.06,0,0,moved
+patchtst,clip,8,ZeroLabel,1,0.9349,0,0,1.99,2.66,1.41,0,0,moved
+patchtst,tensor,2,Blindspot,1,0.0,1,0,0.0,2.47,1.0,0,0,stuck (<1% weights changed)
+patchtst,tensor,2,GaussAmnesiac,1,0.0,1,0,0.0,0.11,1.0,0,0,stuck (<1% weights changed)
+patchtst,tensor,2,MaxLoss,1,0.0,1,0,0.0,21.25,1.0,0,0,stuck (<1% weights changed)
+patchtst,tensor,2,NoisyLabel,1,0.0,1,0,0.0,-0.09,1.0,0,0,stuck (<1% weights changed)
+patchtst,tensor,2,RandLabel,1,0.0,1,0,0.0,2.56,1.0,0,0,stuck (<1% weights changed)
+patchtst,tensor,2,TSU,1,0.0,1,0,0.0,-0.08,1.0,0,0,stuck (<1% weights changed)
+patchtst,tensor,2,ZeroLabel,1,0.0,1,0,0.0,2.66,1.0,0,0,stuck (<1% weights changed)
+patchtst,tensor,3,Blindspot,1,0.0,1,0,0.0,2.47,1.0,0,0,stuck (<1% weights changed)
+patchtst,tensor,3,GaussAmnesiac,1,0.0,1,0,0.0,0.11,1.0,0,0,stuck (<1% weights changed)
+patchtst,tensor,3,MaxLoss,1,0.0,1,0,0.0,21.25,1.0,0,0,stuck (<1% weights changed)
+patchtst,tensor,3,NoisyLabel,1,0.0,1,0,0.0,-0.09,1.0,0,0,stuck (<1% weights changed)
+patchtst,tensor,3,RandLabel,1,0.0,1,0,0.0,2.56,1.0,0,0,stuck (<1% weights changed)
+patchtst,tensor,3,TSU,1,0.0,1,0,0.0,-0.08,1.0,0,0,stuck (<1% weights changed)
+patchtst,tensor,3,ZeroLabel,1,0.0,1,0,0.0,2.66,1.0,0,0,stuck (<1% weights changed)
+patchtst,tensor,4,Blindspot,1,0.0,1,0,0.0,2.47,1.0,0,0,stuck (<1% weights changed)
+patchtst,tensor,4,GaussAmnesiac,1,0.0111,0,1,0.05,0.11,0.98,0,0,moved
+patchtst,tensor,4,MaxLoss,1,0.0,1,0,0.0,21.25,1.0,0,0,stuck (<1% weights changed)
+patchtst,tensor,4,NoisyLabel,1,0.0,1,0,0.0,-0.09,1.0,0,0,stuck (<1% weights changed)
+patchtst,tensor,4,RandLabel,1,0.0,1,0,0.0,2.56,1.0,0,0,stuck (<1% weights changed)
+patchtst,tensor,4,TSU,1,0.0,1,0,0.0,-0.08,1.0,0,0,stuck (<1% weights changed)
+patchtst,tensor,4,ZeroLabel,1,0.0,1,0,0.0,2.66,1.0,0,0,stuck (<1% weights changed)
+patchtst,tensor,6,Blindspot,1,0.0,1,0,0.0,2.47,1.0,0,0,stuck (<1% weights changed)
+patchtst,tensor,6,GaussAmnesiac,1,0.4757,0,1,0.06,0.11,0.97,0,0,moved
+patchtst,tensor,6,MaxLoss,1,0.0,1,0,0.0,21.25,1.0,0,0,stuck (<1% weights changed)
+patchtst,tensor,6,NoisyLabel,1,0.0,1,0,0.0,-0.09,1.0,0,0,stuck (<1% weights changed)
+patchtst,tensor,6,RandLabel,1,0.0,1,0,0.0,2.56,1.0,0,0,stuck (<1% weights changed)
+patchtst,tensor,6,TSU,1,0.0,1,0,0.0,-0.08,1.0,0,0,stuck (<1% weights changed)
+patchtst,tensor,6,ZeroLabel,1,0.0,1,0,0.0,2.66,1.0,0,0,stuck (<1% weights changed)
+patchtst,tensor,8,Blindspot,1,0.5492,0,0,1.03,2.47,1.23,0,0,moved
+patchtst,tensor,8,GaussAmnesiac,1,0.8563,0,1,0.06,0.11,0.96,0,0,moved
+patchtst,tensor,8,MaxLoss,1,0.0,1,0,0.0,21.25,1.0,0,0,stuck (<1% weights changed)
+patchtst,tensor,8,NoisyLabel,1,0.5498,0,1,0.01,-0.09,1.01,0,0,moved
+patchtst,tensor,8,RandLabel,1,0.5494,0,0,0.76,2.56,1.24,0,0,moved
+patchtst,tensor,8,TSU,1,0.5495,0,1,0.01,-0.08,1.01,0,0,moved
+patchtst,tensor,8,ZeroLabel,1,0.5504,0,0,0.92,2.66,1.3,0,0,moved
